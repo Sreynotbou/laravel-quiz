@@ -14,6 +14,8 @@ class BookController extends Controller
     public function index()
     {
         return Book::get();
+        // return Author::get()->where('name', '<', 3, '>', 10);
+        // return Author::get()->where('age', '<', 3, '>', 50);
     }
 
     /**
